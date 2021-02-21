@@ -12,3 +12,27 @@ Il s’agit d’un corpus (fichier “comments_train.csv”) de 1617 avis/commen
 Il est composé d’une colonne “comment” contenant les commentaires et d’une colonne “sentiment” indiquant si le commentaire est négatif ou positif.
 
 Distribution des avis: négatif 598 (37%) | positif 1019 (63%)
+
+### Pré-traitement du texte
+Script : 
+- Aucun prétraitement  (“No tokenizer”)
+- Tokenisation (“Simple tokenierr”)
+- Tokenisation + stemming (“Stemm tokenizer”)
+- Tokenisation + lemmatisation (“Spacy lemma tokenizer”)
+
+### Vectorisation 
+Script : 
+- Countvectorizer (unigram ou bigram) 
+- TF-IDF (unigram ou bigram) 
+- Word Embedding: Word2vec, Fastext
+
+
+### Classification
+- Logistic regression 
+- Naive Baye 
+- Random Forest 
+- SGDclassifier 
+- rbf SVM et Linear SVM 
+
+### Deep Learning
+- Language Model : Transfer-learning avec CamemBERT 
