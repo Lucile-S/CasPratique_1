@@ -33,6 +33,7 @@ Distribution des avis: négatif 598 (37%) | positif 1019 (63%)
 - SVM (linear et rbf)
 
 Pour determiner le meilleure modèle : StratifiedKFold Cross Validation
+
 Pour determiner les meilleurs hyperparamètres paramètres : GridsearchCV --> **script : model_GridSearchCV.py**
 
 ### Deep Learning
