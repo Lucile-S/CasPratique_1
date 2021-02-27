@@ -24,7 +24,7 @@ Script :
 Script : 
 - Countvectorizer (unigram ou bigram) 
 - TF-IDF (unigram ou bigram) 
-- Word Embedding: Word2vec, Fastext
+- Word Embedding: Glove (Spacy), Word2vec, Fastext
 
 
 ### Classification
@@ -32,7 +32,7 @@ Script :
 - Naive Baye 
 - Random Forest 
 - SGDclassifier 
-- rbf SVM et Linear SVM 
+- SVM (linear et rbf)
 
 ### Deep Learning
 - Language Model : Transfer-learning avec CamemBERT 
