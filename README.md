@@ -13,7 +13,7 @@ Il est composé d’une colonne “comment” contenant les commentaires et d’
 
 Distribution des avis: négatif 598 (37%) | positif 1019 (63%)
 
-### Pipelines testées --> script : models.py 
+### Pipelines testées --> **script : models.py**
 #### Pré-traitement du texte
 - Aucun prétraitement  (“No tokenizer”)
 - Tokenisation (“Simple tokenierr”)
@@ -31,6 +31,9 @@ Distribution des avis: négatif 598 (37%) | positif 1019 (63%)
 - Random Forest 
 - SGDclassifier 
 - SVM (linear et rbf)
+
+Pour determiner le meilleure modèle : StratifiedKFold Cross Validation
+Pour determiner les meilleurs hyperparamètres paramètres : GridsearchCV --> **script : model_GridSearchCV.py**
 
 ### Deep Learning
 - Language Model : Transfer-learning avec CamemBERT 
