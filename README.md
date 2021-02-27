@@ -13,21 +13,19 @@ Il est composé d’une colonne “comment” contenant les commentaires et d’
 
 Distribution des avis: négatif 598 (37%) | positif 1019 (63%)
 
-### Pré-traitement du texte
-Script : 
+### Pipelines testées --> script : models.py 
+#### Pré-traitement du texte
 - Aucun prétraitement  (“No tokenizer”)
 - Tokenisation (“Simple tokenierr”)
 - Tokenisation + stemming (“Stemm tokenizer”)
 - Tokenisation + lemmatisation (“Spacy lemma tokenizer”)
 
-### Vectorisation 
-Script : 
+#### Vectorisation 
 - Countvectorizer (unigram ou bigram) 
 - TF-IDF (unigram ou bigram) 
 - Word Embedding: Glove (Spacy), Word2vec, Fastext
 
-
-### Classification
+#### Classification
 - Logistic regression 
 - Naive Baye 
 - Random Forest 
