@@ -14,7 +14,7 @@ Il est composé d’une colonne “comment” contenant les commentaires et d’
 Distribution des avis: négatif 598 (37%) | positif 1019 (63%)
 
 ### Pipelines testées --> **script : models.py**
-#### Pré-traitement du texte
+#### Pré-traitement du texte --> **script : Data_preprocessing.py** 
 - Aucun prétraitement  (“No tokenizer”)
 - Tokenisation (“Simple tokenierr”)
 - Tokenisation + stemming (“Stemm tokenizer”)
