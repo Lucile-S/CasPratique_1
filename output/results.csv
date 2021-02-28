@@ -1,0 +1,317 @@
+Model;Pipeline;CV_train_score;eval_score;eval_precision;eval_recall;eval_F1score;eval_AUC;train_score;test_score;precision;recall;F1score;AUC;AUC_proba
+Spacy Lemma tokenizer + TF-IDF bigram + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";99.9;88.9;0.889;0.941;0.914;0.95;99.9;89.1;0.897;0.935;0.915;0.8759999999999999;0.9579520697167756
+Stemm tokenizer + TF-IDF bigram + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";99.9;88.3;0.884;0.938;0.91;0.95;99.9;89.9;0.895;0.951;0.922;0.8809999999999999;0.9605846042120552
+Stemm tokenizer + TF-IDF bigram + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;88.2;0.8859999999999999;0.9329999999999999;0.9079999999999999;0.948;100.0;89.1;0.899;0.9309999999999999;0.915;0.877;
+Spacy Lemma tokenizer + TF-IDF bigram + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;87.7;0.884;0.927;0.905;0.95;100.0;88.9;0.8959999999999999;0.9309999999999999;0.9129999999999999;0.8740000000000001;
+Simple tokenizer + TF-IDF bigram + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";99.9;87.6;0.879;0.9329999999999999;0.905;0.9420000000000001;99.9;87.4;0.884;0.922;0.902;0.858;0.943681917211329
+No tokenizer + Count Vectorizer + Naive Bayes Multinomial;Pipeline(steps=[('vectorizer', CountVectorizer()), ('clf', MultinomialNB())]);98.3;87.5;0.875;0.937;0.905;0.953;98.2;89.1;0.889;0.9440000000000001;0.9159999999999999;0.872;0.9510348583877996
+No tokenizer + TF-IDF + Linear SVC;"Pipeline(steps=[('vectorizer', TfidfVectorizer()),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";99.1;87.7;0.894;0.915;0.904;0.9470000000000001;98.9;87.2;0.8909999999999999;0.9079999999999999;0.9;0.86;0.9429012345679012
+Stemm tokenizer + Count Vectorizer bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', MultinomialNB())])";99.9;86.7;0.847;0.968;0.903;0.95;99.9;89.3;0.871;0.9740000000000001;0.92;0.865;0.96741103848947
+Stemm tokenizer + TF-IDF + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";98.8;87.4;0.89;0.9129999999999999;0.9009999999999999;0.941;98.8;89.9;0.9209999999999999;0.9179999999999999;0.92;0.892;0.9530682643427744
+Spacy Lemma tokenizer + Count Vectorizer bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', MultinomialNB())])";100.0;86.6;0.8440000000000001;0.968;0.9009999999999999;0.951;100.0;88.7;0.868;0.9670000000000001;0.915;0.8590000000000001;0.9648692810457516
+Simple tokenizer + TF-IDF bigram + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;87.2;0.877;0.927;0.9009999999999999;0.943;100.0;87.7;0.88;0.9309999999999999;0.905;0.857;
+No tokenizer + TF-IDF bigram + Linear SVC;"Pipeline(steps=[('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";99.9;87.0;0.875;0.927;0.9;0.9440000000000001;99.8;87.7;0.8640000000000001;0.9540000000000001;0.907;0.8490000000000001;0.9534858387799564
+Simple tokenizer + Count Vectorizer + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', MultinomialNB())])";98.2;86.8;0.866;0.937;0.9;0.948;98.1;88.1;0.871;0.951;0.909;0.856;0.9514161220043572
+Stemm tokenizer + TF-IDF + SVM;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.8;86.7;0.863;0.94;0.899;0.9440000000000001;99.8;89.3;0.887;0.951;0.9179999999999999;0.873;0.9560639070442992
+Simple tokenizer + Count Vectorizer bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', MultinomialNB())])";100.0;86.2;0.845;0.9590000000000001;0.898;0.948;99.9;88.3;0.8590000000000001;0.9740000000000001;0.9129999999999999;0.851;0.9545751633986927
+Spacy Lemma tokenizer + Count Vectorizer + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', MultinomialNB())])";97.0;86.6;0.862;0.937;0.898;0.9470000000000001;96.8;89.7;0.9;0.941;0.92;0.882;0.9644880174291941
+Spacy Lemma tokenizer + TF-IDF + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;87.1;0.894;0.903;0.898;0.9390000000000001;100.0;87.4;0.904;0.895;0.9;0.867;
+Stemm tokenizer + Count Vectorizer bigram + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;86.8;0.8859999999999999;0.907;0.897;0.94;100.0;87.9;0.892;0.9179999999999999;0.905;0.865;0.9464324618736384
+Stemm tokenizer + TF-IDF + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;86.8;0.89;0.903;0.8959999999999999;0.935;100.0;88.3;0.9079999999999999;0.905;0.907;0.875;
+Spacy Lemma tokenizer + TF-IDF + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";98.8;86.6;0.8809999999999999;0.912;0.8959999999999999;0.941;98.8;89.3;0.912;0.9179999999999999;0.915;0.884;0.9537763253449528
+Spacy Lemma tokenizer + Count Vectorizer bigram + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;86.7;0.883;0.91;0.8959999999999999;0.943;100.0;87.4;0.889;0.915;0.902;0.86;0.94440813362382
+No tokenizer + TF-IDF + SVM;"Pipeline(steps=[('vectorizer', TfidfVectorizer()),
+                ('clf', SVC(probability=True, random_state=0))])";99.9;86.2;0.855;0.943;0.8959999999999999;0.945;99.8;86.0;0.848;0.948;0.895;0.8290000000000001;0.940958605664488
+Spacy Lemma tokenizer + Count Vectorizer bigram + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;86.5;0.87;0.9229999999999999;0.8959999999999999;0.9390000000000001;100.0;87.0;0.879;0.922;0.9;0.852;0.9425018155410312
+No tokenizer + TF-IDF bigram + SGDClassifier;"Pipeline(steps=[('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
+                ('clf', SGDClassifier(random_state=0))])";100.0;86.1;0.8640000000000001;0.927;0.894;0.9440000000000001;100.0;89.9;0.895;0.951;0.922;0.8809999999999999;
+Spacy Lemma tokenizer + TF-IDF + SVM;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.9;85.9;0.85;0.9440000000000001;0.894;0.945;99.8;88.5;0.879;0.948;0.912;0.863;0.9529774872912128
+Simple tokenizer + TF-IDF + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";99.1;86.6;0.885;0.905;0.894;0.938;99.0;85.8;0.8859999999999999;0.889;0.887;0.847;0.9366013071895424
+Stemm tokenizer + Count Vectorizer + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', MultinomialNB())])";96.7;86.0;0.858;0.934;0.894;0.946;96.5;90.1;0.893;0.958;0.924;0.882;0.9647240377632534
+No tokenizer + Count Vectorizer bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer', CountVectorizer(ngram_range=(1, 2))),
+                ('clf', MultinomialNB())])";100.0;85.39999999999998;0.8290000000000001;0.971;0.894;0.945;100.0;87.4;0.847;0.977;0.907;0.8390000000000001;0.9588235294117649
+No tokenizer + TF-IDF + SGDClassifier;"Pipeline(steps=[('vectorizer', TfidfVectorizer()),
+                ('clf', SGDClassifier(random_state=0))])";100.0;86.5;0.885;0.9059999999999999;0.894;0.94;100.0;87.9;0.902;0.905;0.904;0.8690000000000001;
+Stemm tokenizer + Count Vectorizer + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;86.3;0.885;0.899;0.892;0.929;100.0;87.0;0.9009999999999999;0.892;0.897;0.863;0.9371278140885984
+Stemm tokenizer + Count Vectorizer + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";99.9;86.1;0.88;0.903;0.8909999999999999;0.9329999999999999;99.8;89.1;0.904;0.925;0.914;0.879;0.9451888162672476
+Stemm tokenizer + Count Vectorizer bigram + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;86.0;0.8740000000000001;0.909;0.8909999999999999;0.937;100.0;86.8;0.8759999999999999;0.922;0.898;0.85;0.945479302832244
+No tokenizer + Count Vectorizer + Linear SVC;"Pipeline(steps=[('vectorizer', CountVectorizer()),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;85.9;0.8809999999999999;0.9;0.89;0.924;100.0;87.2;0.899;0.899;0.899;0.863;0.9317992011619464
+Simple tokenizer + TF-IDF + SVM;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.9;85.1;0.8370000000000001;0.9490000000000001;0.889;0.937;99.8;87.2;0.857;0.958;0.904;0.843;0.937636165577342
+No tokenizer + Count Vectorizer + Logistic Regression;"Pipeline(steps=[('vectorizer', CountVectorizer()),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;85.9;0.879;0.9;0.889;0.927;100.0;86.8;0.888;0.905;0.8959999999999999;0.855;0.9347857661583152
+No tokenizer + Count Vectorizer bigram + Logistic Regression;"Pipeline(steps=[('vectorizer', CountVectorizer(ngram_range=(1, 2))),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;85.6;0.866;0.9129999999999999;0.889;0.924;100.0;86.6;0.8690000000000001;0.9279999999999999;0.897;0.845;0.9360203340595498
+Spacy Lemma tokenizer + Count Vectorizer + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;85.7;0.8740000000000001;0.903;0.888;0.934;100.0;87.2;0.894;0.905;0.899;0.861;0.943355119825708
+No tokenizer + Count Vectorizer bigram + Linear SVC;"Pipeline(steps=[('vectorizer', CountVectorizer(ngram_range=(1, 2))),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;85.6;0.8690000000000001;0.909;0.888;0.929;100.0;88.5;0.888;0.935;0.9109999999999999;0.867;0.9423021060275962
+Stemm tokenizer + Count Vectorizer + SVM;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.2;85.5;0.866;0.912;0.888;0.93;99.2;87.7;0.882;0.9279999999999999;0.904;0.858;0.94320987654321
+Simple tokenizer + Count Vectorizer bigram + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;85.5;0.866;0.91;0.888;0.934;100.0;85.6;0.8640000000000001;0.915;0.889;0.835;0.9297204066811908
+Stemm tokenizer + Count Vectorizer bigram + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SGDClassifier(random_state=0))])";99.9;85.9;0.894;0.884;0.887;0.9259999999999999;100.0;87.0;0.8909999999999999;0.905;0.898;0.858;
+Simple tokenizer + Count Vectorizer bigram + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;85.8;0.892;0.882;0.8859999999999999;0.9179999999999999;100.0;84.2;0.873;0.8759999999999999;0.8740000000000001;0.83;
+Spacy Lemma tokenizer + Count Vectorizer bigram + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SGDClassifier(random_state=0))])";99.9;85.6;0.882;0.892;0.8859999999999999;0.9279999999999999;100.0;86.8;0.885;0.9079999999999999;0.897;0.8540000000000001;
+Spacy Lemma tokenizer + Count Vectorizer + SVM;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.2;85.1;0.8590000000000001;0.9129999999999999;0.885;0.9279999999999999;99.3;86.4;0.866;0.9279999999999999;0.8959999999999999;0.8420000000000001;0.9392066085693536
+Stemm tokenizer + TF-IDF + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.7;84.39999999999998;0.8320000000000001;0.9440000000000001;0.884;0.934;94.7;87.9;0.866;0.9540000000000001;0.9079999999999999;0.852;0.9470043572984748
+Simple tokenizer + TF-IDF + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;85.2;0.8759999999999999;0.892;0.884;0.932;100.0;86.6;0.893;0.895;0.894;0.856;
+Simple tokenizer + Count Vectorizer + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;84.89999999999998;0.865;0.902;0.882;0.93;100.0;85.8;0.871;0.9079999999999999;0.89;0.84;0.93059186637618
+Spacy Lemma tokenizer + Count Vectorizer + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;84.89999999999998;0.871;0.892;0.8809999999999999;0.929;100.0;87.2;0.889;0.912;0.9;0.8590000000000001;0.940032679738562
+Simple tokenizer + Count Vectorizer bigram + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";100.0;84.3;0.848;0.9159999999999999;0.8809999999999999;0.927;100.0;85.8;0.858;0.9279999999999999;0.892;0.833;0.9278322440087148
+Spacy Lemma tokenizer + TF-IDF + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.4;83.8;0.8220000000000001;0.948;0.8809999999999999;0.9329999999999999;93.9;87.0;0.861;0.948;0.902;0.843;0.9447167755991288
+No tokenizer + TF-IDF + Logistic Regression;"Pipeline(steps=[('vectorizer', TfidfVectorizer()),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";95.3;83.89999999999998;0.825;0.9470000000000001;0.8809999999999999;0.9329999999999999;95.6;85.2;0.831;0.961;0.8909999999999999;0.8140000000000001;0.9307371096586784
+Spacy Lemma tokenizer + Count Vectorizer + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SGDClassifier(random_state=0))])";99.9;84.8;0.878;0.882;0.879;0.922;99.7;86.4;0.885;0.902;0.893;0.851;
+Simple tokenizer + Count Vectorizer + Linear SVC;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";100.0;84.5;0.867;0.8909999999999999;0.878;0.924;100.0;85.6;0.8859999999999999;0.8859999999999999;0.8859999999999999;0.846;0.9261801016702976
+Stemm tokenizer + Count Vectorizer bigram + SVM;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.6;83.2;0.825;0.9309999999999999;0.875;0.922;99.6;84.39999999999998;0.8290000000000001;0.948;0.884;0.807;0.9334241103848946
+Simple tokenizer + TF-IDF + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.8;82.89999999999998;0.813;0.9490000000000001;0.875;0.9259999999999999;94.9;84.0;0.8220000000000001;0.951;0.882;0.8;0.9302832244008716
+No tokenizer + Count Vectorizer bigram + SGDClassifier;"Pipeline(steps=[('vectorizer', CountVectorizer(ngram_range=(1, 2))),
+                ('clf', SGDClassifier(random_state=0))])";100.0;84.3;0.877;0.877;0.875;0.9109999999999999;100.0;86.0;0.902;0.873;0.887;0.856;
+Spacy Lemma tokenizer + Count Vectorizer bigram + SVM;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.6;83.0;0.8220000000000001;0.9329999999999999;0.8740000000000001;0.9209999999999999;99.5;84.6;0.8370000000000001;0.938;0.884;0.813;0.9276870007262163
+Simple tokenizer + Count Vectorizer + SVM;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.3;83.6;0.843;0.909;0.8740000000000001;0.9179999999999999;99.2;83.5;0.84;0.912;0.875;0.809;0.9171296296296296
+No tokenizer + Count Vectorizer + SGDClassifier;"Pipeline(steps=[('vectorizer', CountVectorizer()),
+                ('clf', SGDClassifier(random_state=0))])";100.0;84.0;0.87;0.882;0.8740000000000001;0.9129999999999999;100.0;84.8;0.867;0.895;0.8809999999999999;0.831;
+Stemm tokenizer + Count Vectorizer + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;84.0;0.875;0.871;0.873;0.917;99.9;86.0;0.902;0.873;0.887;0.856;
+Stemm tokenizer + Count Vectorizer + Random Forest;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;82.69999999999997;0.816;0.938;0.872;0.925;100.0;85.0;0.8320000000000001;0.9540000000000001;0.889;0.813;0.9360838779956426
+Simple tokenizer + Count Vectorizer + SGDClassifier;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SGDClassifier(random_state=0))])";100.0;84.0;0.879;0.8640000000000001;0.871;0.914;99.8;83.1;0.857;0.879;0.868;0.815;
+Stemm tokenizer + TF-IDF + Random Forest;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;82.3;0.807;0.948;0.871;0.9229999999999999;100.0;83.5;0.81;0.9640000000000001;0.8809999999999999;0.79;0.9348856209150328
+Spacy Lemma tokenizer + TF-IDF + Random Forest;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;82.3;0.8079999999999999;0.945;0.871;0.9209999999999999;100.0;83.5;0.8170000000000001;0.951;0.879;0.795;0.930918663761801
+Spacy Lemma tokenizer + Count Vectorizer + Random Forest;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;82.1;0.805;0.945;0.8690000000000001;0.9259999999999999;100.0;83.7;0.825;0.941;0.879;0.8009999999999999;0.9371550472040668
+Stemm tokenizer + TF-IDF bigram + SVM;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', SVC(probability=True, random_state=0))])";100.0;81.5;0.7909999999999999;0.9640000000000001;0.868;0.94;100.0;83.5;0.804;0.977;0.882;0.7859999999999999;0.9503631082062456
+No tokenizer + Count Vectorizer + SVM;"Pipeline(steps=[('vectorizer', CountVectorizer()),
+                ('clf', SVC(probability=True, random_state=0))])";97.7;82.5;0.83;0.909;0.867;0.909;97.7;82.69999999999997;0.83;0.912;0.8690000000000001;0.7979999999999999;0.9014342774146696
+Simple tokenizer + TF-IDF + Random Forest;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;80.9;0.787;0.958;0.8640000000000001;0.9109999999999999;100.0;79.60000000000002;0.777;0.948;0.8540000000000001;0.743;0.9119825708061002
+Spacy Lemma tokenizer + TF-IDF bigram + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";95.4;80.80000000000003;0.7829999999999999;0.965;0.8640000000000001;0.93;95.3;81.69999999999997;0.789;0.9670000000000001;0.8690000000000001;0.764;0.9401779230210604
+Simple tokenizer + Count Vectorizer + Random Forest;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;81.2;0.7959999999999999;0.945;0.8640000000000001;0.914;100.0;81.69999999999997;0.799;0.948;0.867;0.7709999999999999;0.9071078431372548
+Spacy Lemma tokenizer + TF-IDF bigram + SVM;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', SVC(probability=True, random_state=0))])";100.0;80.80000000000003;0.7829999999999999;0.966;0.8640000000000001;0.9390000000000001;100.0;82.69999999999997;0.797;0.9740000000000001;0.8759999999999999;0.7759999999999999;0.9466594045025418
+Stemm tokenizer + TF-IDF bigram + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";95.4;80.80000000000003;0.7829999999999999;0.965;0.8640000000000001;0.932;95.7;82.5;0.7979999999999999;0.9670000000000001;0.8740000000000001;0.775;0.9435548293391433
+Simple tokenizer + Count Vectorizer bigram + SVM;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SVC(probability=True, random_state=0))])";99.5;81.39999999999998;0.809;0.924;0.863;0.903;99.5;80.2;0.8;0.915;0.8540000000000001;0.763;0.9020152505446624
+No tokenizer + Count Vectorizer + Random Forest;"Pipeline(steps=[('vectorizer', CountVectorizer()),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;80.2;0.775;0.9690000000000001;0.861;0.9179999999999999;100.0;79.80000000000003;0.777;0.9540000000000001;0.856;0.7440000000000001;0.9183188090050836
+Stemm tokenizer + Count Vectorizer bigram + Random Forest;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.80000000000003;0.773;0.965;0.858;0.919;100.0;81.89999999999998;0.785;0.98;0.872;0.762;0.93510348583878
+Spacy Lemma tokenizer + TF-IDF bigram + Random Forest;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.60000000000002;0.768;0.972;0.857;0.915;100.0;81.5;0.7809999999999999;0.98;0.87;0.757;0.9320533769063182
+Simple tokenizer + TF-IDF bigram + Logistic Regression;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";95.0;79.7;0.772;0.9640000000000001;0.857;0.922;95.7;79.80000000000003;0.768;0.9740000000000001;0.8590000000000001;0.737;0.9236383442265796
+Simple tokenizer + TF-IDF bigram + SVM;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', SVC(probability=True, random_state=0))])";100.0;79.4;0.7659999999999999;0.972;0.856;0.93;100.0;80.5;0.7709999999999999;0.98;0.863;0.743;0.9287581699346404
+Stemm tokenizer + TF-IDF bigram + Random Forest;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.3;0.765;0.972;0.856;0.9209999999999999;100.0;80.0;0.767;0.98;0.861;0.737;0.9237291212781408
+Spacy Lemma tokenizer + Count Vectorizer bigram + Random Forest;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.10000000000002;0.7659999999999999;0.965;0.8540000000000001;0.919;100.0;80.9;0.775;0.98;0.866;0.7490000000000001;0.9315722585330428
+No tokenizer + Count Vectorizer bigram + SVM;"Pipeline(steps=[('vectorizer', CountVectorizer(ngram_range=(1, 2))),
+                ('clf', SVC(probability=True, random_state=0))])";98.9;79.4;0.773;0.956;0.8540000000000001;0.9009999999999999;99.0;79.2;0.765;0.9670000000000001;0.8540000000000001;0.731;0.8975490196078431
+Simple tokenizer + TF-IDF bigram + Random Forest;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;78.9;0.76;0.972;0.853;0.902;100.0;77.2;0.747;0.9640000000000001;0.8420000000000001;0.7040000000000001;0.9072440087145968
+No tokenizer + TF-IDF bigram + SVM;"Pipeline(steps=[('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
+                ('clf', SVC(probability=True, random_state=0))])";100.0;78.60000000000002;0.754;0.983;0.853;0.937;100.0;80.5;0.7659999999999999;0.993;0.865;0.738;0.9423202614379084
+No tokenizer + TF-IDF bigram + Logistic Regression;"Pipeline(steps=[('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";95.6;78.7;0.758;0.975;0.852;0.9309999999999999;95.8;80.7;0.773;0.98;0.865;0.746;0.9355301379811184
+Simple tokenizer + Count Vectorizer bigram + Random Forest;"Pipeline(steps=[('vectorizer',
+                 CountVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;77.4;0.75;0.965;0.843;0.899;100.0;81.10000000000002;0.78;0.9740000000000001;0.866;0.754;0.9112654320987656
+Spacy Lemma tokenizer + TF-IDF + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', MultinomialNB())])";89.7;76.7;0.732;0.996;0.843;0.945;89.60000000000002;77.60000000000002;0.738;0.997;0.848;0.698;0.9612745098039216
+No tokenizer + TF-IDF + Random Forest;"Pipeline(steps=[('vectorizer', TfidfVectorizer()),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;76.6;0.737;0.98;0.841;0.888;100.0;75.7;0.732;0.971;0.8340000000000001;0.6829999999999999;0.8900054466230937
+Stemm tokenizer + TF-IDF + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', MultinomialNB())])";89.1;76.4;0.73;0.993;0.841;0.945;89.3;76.1;0.728;0.99;0.8390000000000001;0.6809999999999999;0.9628540305010894
+No tokenizer + Count Vectorizer bigram + Random Forest;"Pipeline(steps=[('vectorizer', CountVectorizer(ngram_range=(1, 2))),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;76.3;0.7340000000000001;0.98;0.8390000000000001;0.91;100.0;77.4;0.745;0.9740000000000001;0.8440000000000001;0.7040000000000001;0.9154684095860568
+Simple tokenizer + TF-IDF + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', MultinomialNB())])";91.1;74.1;0.711;0.993;0.8290000000000001;0.946;91.4;76.5;0.731;0.993;0.8420000000000001;0.6859999999999999;0.9484931009440812
+No tokenizer + TF-IDF bigram + Random Forest;"Pipeline(steps=[('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;73.6;0.708;0.99;0.826;0.895;100.0;73.9;0.708;0.997;0.828;0.648;0.9089143064633262
+Spacy Lemma tokenizer + TF-IDF bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function spacyTokenizer_lemma at 0x7fdd04cad158>)),
+                ('clf', MultinomialNB())])";95.4;72.2;0.695;1.0;0.82;0.95;95.3;70.6;0.682;1.0;0.8109999999999999;0.603;0.9623275236020334
+Simple tokenizer + TF-IDF bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_simple at 0x7fdd09f40c80>)),
+                ('clf', MultinomialNB())])";96.5;71.7;0.691;0.9990000000000001;0.8170000000000001;0.946;96.4;70.6;0.682;0.997;0.81;0.604;0.9508351488743646
+Stemm tokenizer + TF-IDF bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer',
+                 TfidfVectorizer(ngram_range=(1, 2),
+                                 tokenizer=<function Tokenizer_stemm at 0x7fdd06f4d598>)),
+                ('clf', MultinomialNB())])";94.8;71.8;0.6920000000000001;0.9990000000000001;0.8170000000000001;0.95;94.8;71.39999999999998;0.688;1.0;0.815;0.614;0.965286855482934
+No tokenizer + TF-IDF + Naive Bayes Multinomial;Pipeline(steps=[('vectorizer', TfidfVectorizer()), ('clf', MultinomialNB())]);85.5;69.3;0.6729999999999999;1.0;0.804;0.9520000000000001;86.3;70.8;0.684;0.997;0.8109999999999999;0.607;0.9458605664488018
+No tokenizer + TF-IDF bigram + Naive Bayes Multinomial;"Pipeline(steps=[('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
+                ('clf', MultinomialNB())])";90.5;68.89999999999999;0.67;1.0;0.802;0.9420000000000001;90.1;67.7;0.6609999999999999;1.0;0.7959999999999999;0.564;0.9513798111837328
+Initial Model;"Pipeline(steps=[('tfidf', TfidfVectorizer()),
+                ('clf', SVC(C=1000, gamma=0.001))])";;;;;;;69.39999999999999;70.0;0.69;0.948;0.799;0.613;
