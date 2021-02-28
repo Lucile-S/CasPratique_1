@@ -1,0 +1,45 @@
+Model;Pipeline;CV_train_score;eval_score;eval_precision;eval_recall;eval_F1score;eval_AUC;train_score;test_score;precision;recall;F1score;AUC;AUC_proba
+No tokenizer + Spacy W2V + SVM;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SVC(probability=True, random_state=0))])";87.8;82.39999999999999;0.852;0.872;0.862;0.904;87.4;82.1;0.837;0.889;0.862;0.797;0.8944989106753812
+No tokenizer + Spacy W2V + Linear SVC;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";96.8;82.3;0.869;0.848;0.858;0.895;96.1;82.89999999999999;0.866;0.863;0.864;0.817;0.9040305010893246
+No tokenizer + Spacy W2V + SGDClassifier;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SGDClassifier(random_state=0))])";88.8;80.5;0.871;0.833;0.842;0.903;79.9;78.8;0.76;0.971;0.852;0.724;
+No tokenizer + Spacy W2V + Random Forest;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.4;0.813;0.875;0.843;0.878;100.0;80.2;0.809;0.899;0.851;0.769;0.8659222948438634
+No tokenizer + Spacy W2V + Logistic Regression;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.5;84.1;0.872;0.878;0.874;0.914;93.89999999999999;82.3;0.85;0.873;0.861;0.806;0.9112018881626724
+Simple tokenizer + Spacy W2V + SVM;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SVC(probability=True, random_state=0))])";87.8;82.39999999999999;0.852;0.872;0.862;0.904;87.4;82.1;0.837;0.889;0.862;0.797;0.8944989106753812
+Simple tokenizer + Spacy W2V + Linear SVC;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";96.8;82.3;0.869;0.848;0.858;0.895;96.1;82.89999999999999;0.866;0.863;0.864;0.817;0.9040305010893246
+Simple tokenizer + Spacy W2V + SGDClassifier;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SGDClassifier(random_state=0))])";88.8;80.5;0.871;0.833;0.842;0.903;79.9;78.8;0.76;0.971;0.852;0.724;
+Simple tokenizer + Spacy W2V + Random Forest;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.4;0.813;0.875;0.843;0.878;100.0;80.2;0.809;0.899;0.851;0.769;0.8659222948438634
+Simple tokenizer + Spacy W2V + Logistic Regression;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.5;84.1;0.872;0.878;0.874;0.914;93.89999999999999;82.3;0.85;0.873;0.861;0.806;0.9112018881626724
+Stemm tokenizer + Spacy W2V + SVM;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SVC(probability=True, random_state=0))])";87.8;82.39999999999999;0.852;0.872;0.862;0.904;87.4;82.1;0.837;0.889;0.862;0.797;0.8944989106753812
+Stemm tokenizer + Spacy W2V + Linear SVC;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";96.8;82.3;0.869;0.848;0.858;0.895;96.1;82.89999999999999;0.866;0.863;0.864;0.817;0.9040305010893246
+Stemm tokenizer + Spacy W2V + SGDClassifier;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SGDClassifier(random_state=0))])";88.8;80.5;0.871;0.833;0.842;0.903;79.9;78.8;0.76;0.971;0.852;0.724;
+Stemm tokenizer + Spacy W2V + Random Forest;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.4;0.813;0.875;0.843;0.878;100.0;80.2;0.809;0.899;0.851;0.769;0.8659222948438634
+Stemm tokenizer + Spacy W2V + Logistic Regression;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.5;84.1;0.872;0.878;0.874;0.914;93.89999999999999;82.3;0.85;0.873;0.861;0.806;0.9112018881626724
+Spacy Lemma tokenizer + Spacy W2V + SVM;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SVC(probability=True, random_state=0))])";87.8;82.39999999999999;0.852;0.872;0.862;0.904;87.4;82.1;0.837;0.889;0.862;0.797;0.8944989106753812
+Spacy Lemma tokenizer + Spacy W2V + Linear SVC;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf',
+                 SVC(kernel='linear', probability=True, random_state=0))])";96.8;82.3;0.869;0.848;0.858;0.895;96.1;82.89999999999999;0.866;0.863;0.864;0.817;0.9040305010893246
+Spacy Lemma tokenizer + Spacy W2V + SGDClassifier;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', SGDClassifier(random_state=0))])";88.8;80.5;0.871;0.833;0.842;0.903;79.9;78.8;0.76;0.971;0.852;0.724;
+Spacy Lemma tokenizer + Spacy W2V + Random Forest;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', RandomForestClassifier(random_state=0))])";100.0;79.4;0.813;0.875;0.843;0.878;100.0;80.2;0.809;0.899;0.851;0.769;0.8659222948438634
+Spacy Lemma tokenizer + Spacy W2V + Logistic Regression;"Pipeline(steps=[('vectorizer', WordVectorTransformer()),
+                ('clf', LogisticRegression(max_iter=1000, random_state=0))])";94.5;84.1;0.872;0.878;0.874;0.914;93.89999999999999;82.3;0.85;0.873;0.861;0.806;0.9112018881626724
