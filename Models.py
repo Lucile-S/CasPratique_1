@@ -34,10 +34,11 @@ if __name__=="__main__":
     # --------------#
     # -- Directories/files
     DIR = os.getcwd()
+    Data_DIR= os.path.join(DIR,'Data')
     data_filename = 'comments_train.csv'
     comment_col = 'comment' # name of the column containing raw reviews
     initial_model_path = os.path.join(DIR, 'sentiment_pipe.joblib')
-    data_path = os.path.join(DIR, data_filename)
+    data_path = os.path.join(Data_DIR, data_filename)
     output_DIR = os.path.join(DIR,"output")
     model_DIR= os.path.join(DIR, "Models")
     fig_DIR = os.path.join(output_DIR,"Figs")
