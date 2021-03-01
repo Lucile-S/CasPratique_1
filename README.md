@@ -36,7 +36,7 @@ Pour determiner le meilleure modèle : StratifiedKFold Cross Validation
 
 Pour determiner les meilleurs hyperparamètres paramètres : GridsearchCV --> **script : model_GridSearchCV.py**
 
-Pour tester le meilleur modèle obtenu sur des nouvelles données (au format csv) --> **scrit: Test_script.Py**
+Pour tester le meilleur modèle obtenu sur des nouvelles données (au format csv) --> **script: Test_model.py**
 
 ### Deep Learning
 - Language Model : Transfer-learning avec CamemBERT  --> google collab **https://colab.research.google.com/drive/1cKwjb7j_xNdQQNjaWheXRtq6Gf9oIkfI?usp=sharing**
