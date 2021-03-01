@@ -1,0 +1,45 @@
+2021-02-27 13:15:56,743-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 13:15:56,749-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 13:15:56,755-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:23:10,847-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 13:23:10,852-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 13:23:10,862-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:24:22,105-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 13:24:22,111-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 13:24:22,117-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:26:55,920-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 13:26:55,925-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 13:26:55,930-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:28:33,397-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 13:28:33,403-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 13:28:33,407-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:28:33,417-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:28:33,443-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 13:28:33,445-SentimentAnalysis_fastAPI- INFO  | Text request: C'était horrible, tout était mauvais. | Prediction: Négatif | Probability: 99.95
+2021-02-27 13:45:10,789-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:45:10,827-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 13:45:10,828-SentimentAnalysis_fastAPI- INFO  | Text request: Une cuisine d'Eric Prat délicieusement originale, subtile,raffinée servie avec une attention judicieuse, délicate et souriante font de chacun de nos repas un temps de bonheur gastronomique et d'humanité absolu. Merci et bravo! | Prediction: Positif | Probability: 99.37
+2021-02-27 13:47:57,533-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:47:57,565-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 13:47:57,566-SentimentAnalysis_fastAPI- INFO  | Text request: Nous avons été très déçu de la qualité du repas. On a pris une fondue bourguignonne et une fondue grenier à sel pas assez de viande et le les aiguillettes de canard étaient racis. | Prediction: Négatif | Probability: 99.68
+2021-02-27 13:49:06,903-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:49:06,943-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 13:49:06,944-SentimentAnalysis_fastAPI- INFO  | Text request: Lorsque nous sommes sur le secteur, nous y allons systématiquement. La cuisine, traditionnelle, est toujours excellente. Le cadre est chaleureux, et le personnel vraiment très sympathique.  | Prediction: Positif | Probability: 100.0
+2021-02-27 13:50:02,532-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 13:50:02,537-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 13:50:02,541-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:50:02,548-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 13:50:02,562-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 13:50:02,563-SentimentAnalysis_fastAPI- INFO  | Text request: C'était horrible, tout était mauvais. | Prediction: Négatif | Probability: 99.95
+2021-02-27 14:01:10,391-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 14:01:10,398-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 14:01:10,408-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 14:01:10,423-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 14:01:10,449-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 14:01:10,449-SentimentAnalysis_fastAPI- INFO  | Text request: C'était horrible, tout était mauvais. | Prediction: Négatif | Probability: 99.95
+2021-02-27 14:01:42,229-SentimentAnalysis_fastAPI- INFO  | USER Connexion to Welcome
+2021-02-27 14:01:42,234-SentimentAnalysis_fastAPI- ERROR  | Connexion failed with invalid Token header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ
+2021-02-27 14:01:42,240-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 14:01:42,245-SentimentAnalysis_fastAPI- INFO  | Connexion with valid Token headereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+2021-02-27 14:01:42,259-SentimentAnalysis_fastAPI- INFO  | token: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'}
+2021-02-27 14:01:42,259-SentimentAnalysis_fastAPI- INFO  | Text request: C'était horrible, tout était mauvais. | Prediction: Négatif | Probability: 99.95
