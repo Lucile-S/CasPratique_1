@@ -1,0 +1,6 @@
+[
+    {"text":"C'était horrible, tout était mauvais.", "expected_response": {"sentiment": "Négatif", "probability":86.68}},
+    {"text": "Une cuisine d'Eric Prat délicieusement originale, subtile,raffinée servie avec une attention judicieuse, délicate et souriante font de chacun de nos repas un temps de bonheur gastronomique et d'humanité absolu. Merci et bravo!",  "expected_response": {"sentiment": "Positif", "probability":92.56}},
+    {"text":"Nous avons été très déçu de la qualité du repas. On a pris une fondue bourguignonne et une fondue grenier à sel pas assez de viande et le les aiguillettes de canard étaient racis.", "expected_response": {"sentiment": "Négatif", "probability": 89.74}},
+    {"text":"Lorsque nous sommes sur le secteur, nous y allons systématiquement. La cuisine, traditionnelle, est toujours excellente. Le cadre est chaleureux, et le personnel vraiment très sympathique", "expected_response": {"sentiment": "Positif", "probability": 92.75}}
+]
