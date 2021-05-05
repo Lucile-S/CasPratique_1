@@ -42,5 +42,5 @@ Pour tester le meilleur modèle obtenu sur des nouvelles données (au format csv
 - Language Model : Transfer-learning avec CamemBERT  --> google collab **https://colab.research.google.com/drive/1cKwjb7j_xNdQQNjaWheXRtq6Gf9oIkfI?usp=sharing**
 
 ## API  avec FastAPI
-Dans api-SentimentAnalysis/src --> uvicorn main:app
+Dans api-SentimentAnalysis/src --> uvicorn main:app --> http://127.0.0.1:8000/docs
 
